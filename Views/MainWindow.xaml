@@ -1,0 +1,51 @@
+﻿<Window x:Class="Velyka23.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Velyka23"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="344">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="57*"/>
+        </Grid.RowDefinitions>
+        <Grid HorizontalAlignment="Left" Height="244" Margin="46,98,0,0" VerticalAlignment="Top" Width="258" Grid.RowSpan="2">
+            
+            
+            <Label Content="Name" Margin="10,10,176,0" VerticalAlignment="Top" RenderTransformOrigin="0.842,1.207"/>
+            <Label Content="Surname" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.434,1.629"/>
+            <Label Content="Email" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+            <Label Content="Birthday" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="Name" HorizontalAlignment="Right" Height="23" Margin="0,12,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding Name}" />
+            <TextBox x:Name="Surname" HorizontalAlignment="Left" Height="23" Margin="128,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding Surname}"/>
+            <TextBox x:Name="Mail" HorizontalAlignment="Left" Height="23" Margin="128,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding Mail}"/>
+            <DatePicker x:Name="Birhday" HorizontalAlignment="Left" Margin="128,104,0,0" VerticalAlignment="Top" Width="119" SelectedDate="{Binding Birthday,  Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            </Grid>
+        <Button Command="{Binding ProceedCommand}"  Content="PROCEED" HorizontalAlignment="Left" Margin="136,77.7,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text.Length, ElementName=Name, UpdateSourceTrigger=PropertyChanged}" Value="0">
+                            <Setter Property="IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Text.Length, ElementName=Surname, UpdateSourceTrigger=PropertyChanged}" Value="0">
+                            <Setter Property="IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Text.Length, ElementName=Mail, UpdateSourceTrigger=PropertyChanged}" Value="0">
+                            <Setter Property="IsEnabled" Value="False"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Text.Length, ElementName=Birhday, UpdateSourceTrigger=PropertyChanged}" Value="0">
+                            <Setter Property="IsEnabled" Value="False"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+
+    </Grid>
+
+</Window>

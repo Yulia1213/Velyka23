@@ -1,0 +1,15 @@
+C:\Users\Flo\source\repos\Velyka23\Velyka23\bin\Debug\Velyka23.exe.config
+C:\Users\Flo\source\repos\Velyka23\Velyka23\bin\Debug\Velyka23.exe
+C:\Users\Flo\source\repos\Velyka23\Velyka23\bin\Debug\Velyka23.pdb
+C:\Users\Flo\source\repos\Velyka23\Velyka23\obj\Debug\Velyka23.csprojAssemblyReference.cache
+C:\Users\Flo\source\repos\Velyka23\Velyka23\obj\Debug\App.g.cs
+C:\Users\Flo\source\repos\Velyka23\Velyka23\obj\Debug\Velyka23_MarkupCompile.cache
+C:\Users\Flo\source\repos\Velyka23\Velyka23\obj\Debug\Velyka23_MarkupCompile.lref
+C:\Users\Flo\source\repos\Velyka23\Velyka23\obj\Debug\Velyka23.g.resources
+C:\Users\Flo\source\repos\Velyka23\Velyka23\obj\Debug\Velyka23.Properties.Resources.resources
+C:\Users\Flo\source\repos\Velyka23\Velyka23\obj\Debug\Velyka23.csproj.GenerateResource.cache
+C:\Users\Flo\source\repos\Velyka23\Velyka23\obj\Debug\Velyka23.csproj.CoreCompileInputs.cache
+C:\Users\Flo\source\repos\Velyka23\Velyka23\obj\Debug\Velyka23.exe
+C:\Users\Flo\source\repos\Velyka23\Velyka23\obj\Debug\Velyka23.pdb
+C:\Users\Flo\source\repos\Velyka23\Velyka23\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Flo\source\repos\Velyka23\Velyka23\obj\Debug\Views\MainWindow.baml
